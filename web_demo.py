@@ -7,6 +7,7 @@ import random
 import os
 import neat
 import asyncio
+import pygame
 
 # Para compatibilidad web
 try:
@@ -232,13 +233,13 @@ async def main():
                     if event.type == pygame.QUIT:
                         running = False
                         break
-if not running:
-    break
+            if not running:
+                break
 
-print("Preparando nueva generación...")
-await asyncio.sleep(2)
-    
+        print("Preparando nueva generación...")
+        await asyncio.sleep(2)
+        
     pygame.quit()
 
 if __name__ == "__main__":
-asyncio.run(main())
+    asyncio.run(main())
