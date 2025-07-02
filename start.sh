@@ -1,3 +1,3 @@
 #!/bin/bash
 pip install -r requirements.txt
-python main.py
+python render_demo.py
