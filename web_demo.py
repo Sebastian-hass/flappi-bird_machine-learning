@@ -3,7 +3,6 @@ Demo web del proyecto Flappy Bird AI
 Versión simplificada para mostrar online
 """
 
-import pygame
 import random
 import os
 import neat
@@ -233,23 +232,13 @@ async def main():
                     if event.type == pygame.QUIT:
                         running = False
                         break
-                if not running:
-                    break
-                
-                WIN.fill((50, 50, 50))
-                font = pygame.font.Font(None, 48)
-                text = font.render("Preparando nueva generación...", True, (255, 255, 255))
-                WIN.blit(text, (WIN_WIDTH//2 - text.get_width()//2, WIN_HEIGHT//2))
-                pygame.display.flip()
-                pygame.time.wait(33)
-                
-                if WEB_MODE:
-                    await asyncio.sleep(0)
+if not running:
+    break
+
+print("Preparando nueva generación...")
+await asyncio.sleep(2)
     
     pygame.quit()
 
 if __name__ == "__main__":
-    if WEB_MODE:
-        asyncio.run(main())
-    else:
-        asyncio.run(main())
+asyncio.run(main())
