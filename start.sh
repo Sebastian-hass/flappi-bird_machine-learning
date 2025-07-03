@@ -1,3 +1,3 @@
 #!/bin/bash
 pip install -r requirements.txt
-python web_app.py
+gunicorn web_app:app --host 0.0.0.0 --port $PORT
