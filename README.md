@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="Flappy_bird_NEAT" src="https://github.com/user-attachments/assets/88db1fe8-8fa5-40c6-b0f8-13a233e01233" />
+
 # Flappy Bird AI con NEAT
 
 Este proyecto implementa una IA que aprende a jugar Flappy Bird usando el algoritmo NEAT (NeuroEvolution of Augmenting Topologies).
